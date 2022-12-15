@@ -1,0 +1,51 @@
+<section class="dark noBg no-padding">
+  <div class="container-full-width no-padding">
+    <div class="cpntainer-fluid">
+      <div class="d-flex justify-content-left">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-12">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-white"> Home </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Friends
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid justify-content-center">
+      <div class="conatiner-fluid d-flex justify-content-center">
+        <h1>My Friends List:</h1>
+      </div>
+    </div>
+    <h1>&nbsp; &nbsp; &nbsp; &nbsp;</h1>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div *ngFor="let x of friends">
+        <div class="col">
+          <div class="card bg-dark" style="margin-left: 40px; margin-right: 40px; margin-bottom: 40px; color: white;">
+            <img src="{{ x.img }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ x.title }}</h5>
+              <p>{{ x.fave }}</p>
+              <p>{{ x.discord}}</p>
+              <p class="card-text">{{x.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+<div class="card bg-black mt-4" style="width: 35rem;">
+    <div class="card-body">
+        <h5 class="card-title text-white">Submit Your Own Article!</h5>
+        <p class="card-text text-white">Remember, submitting malicious or fake links can result in a permanent ban on the site.</p>
+        <form #postForm="ngForm" (ngSubmit)="addPage(postForm.value)">
+
+            <div class="input-group mt-1">
+                <span class="input-group-text text-white">Game Title</span>
+                <input type="text" class="form-control" ngModel name="game">
+            </div>
+
+            <div class="input-group mt-1">
+                <span class="input-group-text text-white">Title of the Article</span>
+                <input type="text" class="form-control" ngModel name="title">
+            </div>
+
+            <div class="input-group mt-1">
+                <span class="input-group-text text-white">Summary of the Article</span>
+                <input type="text" class="form-control" ngModel name="description">
+            </div>
+
+            <div class="input-group mt-1">
+                <span class="input-group-text text-white">Link to the Article</span>
+                <input type="text" class="form-control" ngModel name="link">
+            </div>
+
+            <div class="input-group mt-1">
+                <span class="input-group-text text-white">Image for the Article</span>
+                <input type="text" class="form-control" ngModel name="images">
+            </div>
+
+            <button class="btn text-white mt-1" type="submit">
+                Add Article
+            </button>
+
+        </form>
+    </div>

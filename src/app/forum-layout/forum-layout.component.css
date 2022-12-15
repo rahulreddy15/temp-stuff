@@ -1,0 +1,34 @@
+.h3{
+    font-size:  32px;
+}
+.breadcrumb-item{
+    color: white;
+    text-decoration: none;
+
+}
+
+a.text-white:after{
+    content: '>';
+    color: white;
+    font-size: 14px;
+}
+
+
+a.text-white:hover{
+    text-decoration: underline;
+}
+
+ol{
+    padding-top: 1rem;
+    padding-left: 9rem;
+}
+
+.category{
+    background-color: #a3a8f8
+}
+.forum-col{
+    min-width: 256px;
+}
+.last-post-col{
+    min-width:192px;
+}

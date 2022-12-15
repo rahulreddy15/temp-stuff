@@ -1,0 +1,23 @@
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+ text-decoration: underline;
+}
+
+input.form-control{
+    background-color: #474545;
+    padding-right: 4rem;
+}
+
+.navbar-brand{
+    padding-left: 10rem;
+}
+.btn-group{
+    padding-bottom: 2rem;
+}
+.card{
+    border: 0;
+}

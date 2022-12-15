@@ -1,0 +1,40 @@
+.h3{
+    font-size:  32px;
+}
+.breadcrumb-item{
+    color: white;
+    text-decoration: none;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.Home:hover{
+    text-decoration: underline;
+}
+ol{
+    padding-top: 1rem;
+    padding-left: 9rem;
+}
+
+h4{
+    color: white;
+}
+.link-light-m:hover{
+
+    text-decoration: underline
+
+}
+ul{
+    list-style: none;
+}
+h4.text-white-h{
+    padding-top: 5rem;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

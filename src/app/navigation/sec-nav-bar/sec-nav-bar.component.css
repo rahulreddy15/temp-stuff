@@ -1,0 +1,12 @@
+
+.btn{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 45px;
+}
+
+.btn:hover{
+    background: linear-gradient(rgb(0 0 0/40%) 0 0);   
+}

@@ -1,0 +1,113 @@
+<div id="background">
+  <div
+    class="centered"
+    style="background-color: rgb(165, 166, 192); width: 80%; height: 300px"
+  >
+    <p class="centered" style="font-size: 45px; margin-left: 360px">
+      Request New Game Page
+    </p>
+    <form
+      id="log-in-form"
+      class="justify-content-center"
+      style="
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+      "
+      #postForm="ngForm"
+      (ngSubmit)="addTitle(postForm.value)"
+    >
+      <label
+        id="name"
+        style="margin-right: 10px; margin-left: 190px; margin-bottom: 10px"
+        >Name:</label
+      >
+      <input
+        type="text"
+        name="name"
+        required="true"
+        placeholder="Name"
+        ngModel
+      /><br />
+
+      <label
+        id="description"
+        style="margin-right: 10px; margin-left: 190px; margin-bottom: 10px"
+        >Description:</label
+      >
+      <input
+        type="text"
+        name="description"
+        required="true"
+        placeholder="Description"
+        ngModel
+      /><br />
+
+      <label
+        id="tags"
+        style="margin-right: 10px; margin-left: 190px; margin-bottom: 10px"
+        >Tags (Comma Seperated):</label
+      >
+      <input
+        type="text"
+        name="tags"
+        required="true"
+        placeholder="Tags"
+        ngModel
+      /><br />
+
+      <button
+        type="submit"
+        class="btn btn-secondary"
+        style="margin-left: 350px"
+      >
+        Request New Game
+      </button>
+    </form>
+    <p
+      id="login-error"
+      style="color: red; margin-left: 360px; font-size: 24px"
+    ></p>
+  </div>
+</div>
+
+<div class="container">
+  <div id="background">
+    <div class="centered">
+      <h1 class="text-center" style="color: rgb(165, 166, 192)">
+        Upcoming Games
+      </h1>
+    </div>
+
+    <div
+      class="container"
+      style="background-color: rgb(165, 166, 192);"
+    >
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Tags</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let page of upcomingPages">
+            <td>{{ page.name }}</td>
+            <td>{{ page.description }}</td>
+            <td>
+              <ul>
+                <li *ngFor="let property of page.tags | keyvalue">
+                  {{ property.value }}
+                </li>
+              </ul>
+            </td>
+            <td>{{ page.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
